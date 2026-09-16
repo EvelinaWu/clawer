@@ -342,7 +342,9 @@ import json
 
 with open(r"C:\Users\User\Downloads\F-C0032-010.json",encoding="utf-8")as f:
   data = json.load(f)
-  print(data)
+  
+  
+  # print(data)
 
 df = pd.DataFrame(data)
  
