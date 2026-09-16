@@ -1,0 +1,178 @@
+{
+  "editor.codeActionsOnSave": {},
+  "workbench.settings.applyToAllProfiles": [
+
+
+  ],
+
+  //editor 的內容
+  "emmet.showSuggestionsAsSnippets": true,
+  //解決 emmet 在 js 檔案無法正常的自動產生 html
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact", // html
+    "ejs": "html"
+  },
+  // 讓 Emmet 功能使用 Tab 鍵就可以觸發
+  "emmet.triggerExpansionOnTab": true,
+  //已開啟的編輯器會讓每次開檔/關檔的時候，檔案總管的檔案清單上下位置晃動，以致於眼球需要經常重新定位，分散注意力。
+  //由於已經有「頁籤」可以看已開啟的檔案，用 Ctrl+E 也可以快速找檔案，所以已開啟的編輯器就沒那麼有實用價值了。
+  "explorer.openEditors.visible": 0,
+  // 刪除檔案時確認
+  "explorer.confirmDelete": false,
+  // 拖曳移動檔案不彈出確認視窗
+  "explorer.confirmDragAndDrop": false, //禁止軟件版本更新
+  // 在儲存時設定檔案格式。格式器必須處於可用狀態、檔案不得自動儲存，且編輯器不得關機。
+  "diffEditor.ignoreTrimWhitespace": true,
+  // 設定預設存檔時不做格式化,使用分別啟動
+
+  // 需下載安裝 Fira Code 字型 (安裝 OTF 格式)
+  // https://github.com/tonsky/FiraCode/releases
+  // 需下載客製化過的 Microsoft YaHei Mono 字型
+  // https://github.com/doggy8088/MicrosoftYaHeiMono-CP950
+  //======================= VSCode 編輯器相關設定 =======================//
+  // 控制字型家族、開啟連字符號。
+  "editor.fontFamily": "'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace",
+  // 控制字型大小 (以像素為單位)。
+  "editor.fontSize": 20,
+  // 要啟用連體字型(Fira Code)必須將以下設定打開
+  // 連字（Ligatures）：將 =>、!= 等符號顯示為更美觀的組合，需字體支援並開啟 fontLigatures。
+  "editor.fontLigatures": true, //啟用連字效果需字體支援）
+  "editor.fontWeight": "300", // 300(Light)、400(Regular)、500、600(Medium)、"normal"
+  "editor.multiCursorModifier": "ctrlCmd", //用 Ctrl 鍵來觸發多重游標選取
+  // 控制是否會顯示迷你地圖
+  "editor.minimap.enabled": false, // 關掉右側滑動預覽檔
+  //如果開啟 MiniMap 的話，預設會顯示實際字元 (字超小)，根本看不清楚。
+  //將這個設定關閉，就會改顯示彩色區塊而已，這會讓VSCode 反應速度更快。
+  "editor.minimap.renderCharacters": false,
+  // 在儲存時設定檔案格式。
+  // 格式器必須處於可用狀態、檔案不得自動儲存，且編輯器不得關機。
+  "editor.wordWrap": "on", //當程式碼超過編輯器畫面，會自動換行。
+  // 調整行高和字母間距（可選）
+  "editor.lineHeight": 28,
+  //字體間距
+  "editor.letterSpacing": 1,
+  // 字體大小
+  "editor.lineNumbers": "on", //顯示行號
+  // 控制編輯器是否應自動設定貼上的內容格式。格式器必須可供使用，而且格式器應該能夠設定文件中一個範圍的格式。
+  "editor.cursorStyle": "block",
+  "editor.formatOnPaste": true, // 關閉程式碼時會自動排版
+  "editor.formatOnSave": false, // 關閉程式碼存檔時自動排版(縮排)
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定排版工具(預設)
+  // 建議禁用內置的editor.matchBrackets設置
+  "editor.matchBrackets": "never",
+  // vscode預設啟用了根據檔案型別自動設定tabsize的選項
+  "editor.detectIndentation": false,
+  // 一個 tab 鍵的空白間距。
+  "editor.tabSize": 2,
+  // 游標粗細
+  "editor.cursorWidth": 2,
+  // code snippet 提示拉到最上面
+  "editor.snippetSuggestions": "top",
+  // 控制編輯器是否顯示控制字元。顯示 markdown 中英文切換時產生的特殊字元
+  "editor.renderControlCharacters": true,
+  // 在 #editor.wordWrap# 為 wordWrapColumn 或 bounded 時，控制編輯器的折行列。100 列後換行
+  "editor.wordWrapColumn": 100,
+  "editor.selectionHighlight": true, //選中相同代碼時，顯示高亮度
+  "editor.quickSuggestions": { //智慧提示
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.mouseWheelZoom": true, // 使用滑鼠滾輪並按住 Ctrl 時，縮放編輯器的字型, 用ctrl+ 滑鼠滾輪去放大縮小
+  // 提醒 code 該斷行了
+  "editor.rulers": [
+    120
+  ],
+  "editor.renderLineHighlight": "line", // line、all
+  // 增加值"backgroundColor : {color}"，以提高知名度
+  
+  "editor.tabCompletion":"on",
+
+  //=============== Code Runner ==================//
+  // [code runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.defaultLanguage": "javascript",
+  "code-runner.ignoreSelection": true, //這是避免在工作區內產生暫存檔
+  "code-runner.executorMap": {
+    "javascript": "node",
+    // "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
+    "csharp": "clear && echo '' && csc /nologo /utf8output $fileName && .\\fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "D:/xampp/php/php.exe",
+    //which python
+    "python": "$pythonPath -u $fullFileName",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  // ===================== 終端機設定 ========================//
+// 執行 cmd 的時候將編碼設定為 65001
+// >nul 是避免在控制台輸出修改編碼的資訊，否則會輸出 active code page: 65001;
+// 下面設定下: Run Code 執行正常，但 F5 除錯模式時，彈出的黑框是亂碼的現象需改成 GBK
+"terminal.integrated.shellArgs.windows": [
+  //"GBK"
+  "-NoExit",
+  "/c",
+  "chcp 65001"
+],
+// "Command Prompt"
+"terminal.integrated.defaultProfile.windows": "Command Prompt", // 預設終端機 shell 為 cmd
+// "mac Shell"
+"terminal.integrated.defaultProfile.osx": "zsh",
+"terminal.integrated.shellIntegration.enabled": false,
+
+// 終端機字體（可與編輯器不同）
+"terminal.integrated.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+"terminal.integrated.fontSize": 16,
+"vsicons.dontShowNewVersionMessage": true,
+"git-graph.customEmojiShortcodeMappings": [
+
+],
+"task.allowAutomaticTasks": "on",
+}

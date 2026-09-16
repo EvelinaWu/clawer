@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Edit with venv IDLE]
+@="Open with venv IDLE"
+
+[HKEY_CLASSES_ROOT\*\shell\Edit with venv IDLE\command]
+@="\"C:\\Users\\User\\venv\\Scripts\\python.exe\" -m idlelib \"%1\""
